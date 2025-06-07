@@ -1,7 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>My Links</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 1. Import Google Fonts: Poppins Regular 400 & Bold 700 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --md-sys-color-primary: #6750A4;
@@ -15,7 +23,8 @@
     body {
       margin: 0;
       padding: 2rem;
-      font-family: 'Poppins Bold', sans-serif;
+      /* Changed font-family to Poppins */
+      font-family: 'Poppins', sans-serif;
       background-color: var(--md-sys-color-surface);
       color: var(--md-sys-color-on-surface);
       display: flex;
@@ -27,6 +36,7 @@
       font-size: var(--md-sys-typescale-title-large);
       margin-bottom: 1rem;
       color: var(--md-sys-color-primary);
+      font-weight: 700; /* Bolding the title for consistency */
     }
 
     ul {
@@ -47,14 +57,18 @@
       background-color: var(--md-sys-color-primary);
       color: var(--md-sys-color-on-primary);
       text-decoration: none;
-      border-radius: 0.5rem;
+      /* Changed border-radius to 18px */
+      border-radius: 18px;
       font-size: var(--md-sys-typescale-body-medium);
-      box-shadow: 0 2px 5px rgba(255, 205, 181, 0.1);
-      transition: background-color 0.3s ease;
+      /* Applied Poppins Bold to the button text */
+      font-weight: 700;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
 
-    a:hover {
+    a:hover, a:focus {
       background-color: #7F67BE;
+      transform: translateY(-2px); /* Add a subtle lift on hover */
     }
   </style>
 </head>
