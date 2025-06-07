@@ -1,8 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    
+    <!-- 1. Import Google Fonts: Poppins Regular 400 & Bold 700 Italic -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- 2. Apply custom styles in the spirit of Material 3 -->
+    <style>
+        /* * Material 3 uses specific tokens for typography.
+         * We are applying the requested Poppins font family here.
+         * The 'Display Large' role is often expressive and is a good fit for a page title.
+        */
+        body {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 400; /* Regular weight */
+            background-color: #fef7ff; /* Material 3 Neutral Surface */
+            color: #1d1b20; /* Material 3 On Surface color */
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        /* * Applying Bold and Italic to the H1 element.
+         * This creates an expressive, stylized headline.
+        */
+        h1 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700; /* Bold weight */
+            font-style: italic; /* Italic style */
+            color: #6750a4; /* Material 3 Primary Color */
+            font-size: 3.5rem; /* Equivalent to M3 Display Large */
+            line-height: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.125rem; /* M3 Title Large */
+            margin-bottom: 1.5rem;
+        }
+
+        a {
+            color: #6750a4; /* Material 3 Primary Color */
+            text-decoration: none;
+            font-weight: 600;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        a:hover, a:focus {
+            border-color: #6750a4;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-<a href="https://1064-studios.github.io/social-links.html">Social Links</a>
+
+    <h1>Hello World</h1>
+
+    <p>I'm hosted with GitHub Pages.</p>
+
+    <a href="https://1064-studios.github.io/social-links.html">Social Links</a>
+
 </body>
 </html>
